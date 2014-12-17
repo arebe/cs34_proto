@@ -1,7 +1,9 @@
-<html>
-{% for bike in bikes %}
-    {{ bike.name }}
-    {{ bike.owner }}
-    {{ bike.frame }}
-{% endfor %}
-</html>
+{% extends "bikesftw/base.html" %}
+
+{% block content %}
+	{% for bike in bikes %}
+	    {{ bike.name }}
+	    {{ bike.owner }}
+	    {{ bike.frame }}
+	{% endfor %}
+{% endblock content %}

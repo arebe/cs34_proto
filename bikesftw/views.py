@@ -6,3 +6,4 @@ from .models import Bike
 def bike_disp(request):
 	bikes = Bike.objects.all().order_by('date_created')
 	return render(request, 'bikesftw/bike_disp.html', {'bikes': bikes})
+
