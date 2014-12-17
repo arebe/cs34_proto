@@ -92,10 +92,11 @@ STATIC_ROOT = 'staticfiles'
 try:
     from .local_settings import *
 except ImportError:
+    import dj_database_url
+    DATABASES['default'] = dj_database_url.config()
     pass
 
-import dj_database_url
-DATABASES['default'] = dj_database_url.config()
+
 
 STATICFILES_DIRS = {
     os.path.join(BASE_DIR, "static"),
