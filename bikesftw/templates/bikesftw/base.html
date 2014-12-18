@@ -6,10 +6,9 @@
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
         <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
         <link href='//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
-        <link rel="stylesheet" href="{% static 'css/bikesftw.css' %}">
-        <link rel="stylesheet" href-"{% static 'css/fukuapp.min.css' %}">
+        <link href="{{ STATIC_ROOT }}/css/bikesftw.css" rel="stylesheet" type="text/css">
     </head>
- <body class="background-dark landing">
+ <body>
 
 <nav class="navbar navbar-default" role="navigation">
   <div class="container-fluid">
@@ -33,7 +32,7 @@
         <!-- if logged in -->
         <li><a href="{% url 'myfeed' %}">My Feed</a></li>
         <li><a href="{% url 'maint_disp' %}">Maintenance</a></li>
-        <li class="active"><a href="{% url 'bikesftw.views.bike_disp' %}">My Bike<span class="sr-only">(current)</span></a></li>
+        <li><a href="{% url 'bikesftw.views.bike_disp' %}">My Bike</a></li>
         <li><a href="{% url 'sign_out' %}">Log out</a></li>
         <!-- if not logged in -->
         <li><a href="{% url 'sign_in' %}">Log in / Create account</a></li>

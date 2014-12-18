@@ -1,7 +1,15 @@
 {% extends "bikesftw/base.html" %}
 
-{% block content %}
+{% block title %}Home{% endblock %}
 
-HOME
+{% block heading %}<h2>Home</h2>{% endblock %}
+
+{% block content %}
+<h1 class="whatever">WHATEVER</H1>
+
+<img src="{{ STATIC_ROOT }}img/bikesftw.jpg">
+
+<p>{{ STATIC_ROOT }}
+
 
 {% endblock content %}

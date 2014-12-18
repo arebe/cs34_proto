@@ -1,5 +1,12 @@
 @charset "utf-8";
 /* css for the main app */
+body {
+	background-color: #000000;
+}
+
+.whatever{
+	background-color: yellow;
+}
 
 /* LVHA */
 a:link {color: #6699CC; text-decoration: none}
