@@ -1,0 +1,7 @@
+{% extends "bikesftw/base.html" %}
+
+{% block content %}
+
+MY FEED
+
+{% endblock content %}
